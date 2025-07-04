@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page d'Accueil</title>
+  <link rel="icon" type="image/png" href="logo.jpg" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #05775b;
+      color: #f5f5dc;
+      padding: 2rem;
+      text-align: center; 
+    }
+
+    .logo-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .logo-title img {
+      height: 140px;
+      width: auto;
+    }
+
+    nav {
+      background-color: #f5f5dc;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      color: #05775b;
+      text-decoration: none;
+    }
+
+    nav .submenu {
+      display: none;
+      position: absolute;
+      background-color: #f5f5dc;
+      list-style: none;
+      margin: 0;
+      padding: 0.5rem 0;
+      top: 100%;
+      left: 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    nav .submenu li {
+      padding: 0.5rem 1rem;
+      white-space: nowrap;
+    }
+
+    nav .submenu li a {
+      color: #05775b;
+    }
+
+    nav li:hover .submenu {
+      display: block;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      background: url('f.jpg') center/cover no-repeat;
+      color: white;
+      padding: 18rem 2rem;
+      text-align: center;
+    }
+
+    #galerie {
+      padding: 4rem 2rem;
+      text-align: center;
+      color: #070101;
+      background: none;
+    }
+
+    .galerie-images {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .galerie-images img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .cta {
+      margin-top: 1rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .cta a,
+    .cta button {
+      padding: 1rem 2rem;
+      background-color: #05775b;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .search-btn {
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      cursor: pointer;
+      color: #05775b;
+      padding: 0;
+    }
+
+    .search-bar {
+      background-color: #f5f5dc;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .search-bar input {
+      width: 50%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .close-btn {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: #05775b;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #05775b;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-title">
+      <a href="index.html">
+        <img src="logo.jpg" alt="Logo Fanfare">
+      </a>
+      <div>
+        <h1>Fanfare La Belle Mélodie du Christ</h1>
+        <p>Harmonie, louange et fraternité</p>
+      </div>
+      <img src="ARS.jpg" alt="Image ARS" class="ars-image" />
+    </div>
+  </header>
+
+ <nav>
+  <ul id="navLinks">
+    <li><a href="accueil.html">Accueil</a></li>
+    <li>
+      <a href="#">Qui sommes-nous ? ▼</a>
+      <ul class="submenu">
+        <li><a href="historique.html">Historique</a></li>
+        <li><a href="Directeur.html">Directeur</a></li>
+        <li><a href="Membre.html">Membres</a></li>
+        <li><a href="comité.html">Comité et Commission musical</a></li>
+        <li><a href="biographie.html">Biographie des Planificateurs</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Nos Réalisations ▼</a>
+      <ul class="submenu">
+        <li><a href="nos.html">Nos Solistes</a></li>
+        <li><a href="enre.html">Enregistrement et Résultats</a></li>
+        <li><a href="Vide.html">Vidéo</a></li>
+      </ul>
+    </li>
+    <li><a href="galerie.html">Galerie</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="calendrier.html">Calendrier</a></li>
+     <li><a href="Instruments.html">Nos Instruments</a></li>
+    <li>
+      <button id="searchBtn" class="search-btn" aria-label="Ouvrir recherche">🔍</button>
+    </li>
+  </ul>
+</nav>
+
+<!-- Barre de recherche cachée par défaut -->
+<div id="searchBar" class="search-bar" style="display:none;">
+  <input type="text" placeholder="Rechercher..." aria-label="Barre de recherche" />
+  <button id="closeSearch" class="close-btn" aria-label="Fermer recherche">✖</button>
+</div>
+
+  <section class="hero">
+    <h2>Bienvenue sur notre site officiel</h2>
+    <p>Rejoignez-nous pour célébrer la foi en musique !</p>
+    <div class="cta">
+      <a href="contact.html">Nous rejoindre</a>
+       <a href="vide.html">Voir nos Prestations</a>
+    </div>
+  </section>
+
+  <section id="Qui sommes-nous">
+    <h2>Qui sommes-nous ?</h2>
+    <p>La Belle Mélodie du Christ est une fanfare chrétienne dédiée à la louange, à l'excellence musicale et à la fraternité. Fondée en 2015, nous animons cultes, mariages, sorties et grandes cérémonies spirituelles.</p>
+  </section>
+
+  <section id="evenements">
+    <h2>Événements</h2>
+    <ul>
+      <li>📅 Excursion - Août 2025</li>
+      <li>🎺 Grande prestation de l'anniversaire de la fanfare - Juin 2025</li>
+    </ul>
+  </section>
+
+  <section id="galerie">
+    <h2>Galerie</h2>
+    <p>Photos et vidéos de nos plus belles prestations seront bientôt disponibles ici !</p>
+    <div class="galerie-images">
+      <img src="acc.jpg" alt="Photo 1">
+      <img src="xx.jpg" alt="Photo 2">
+      <img src="fill.jpg" alt="Photo 3">
+      <img src="abb.jpg" alt="Photo 4">
+    </div>
+  </section>
+
+  <script>
+  const searchBtn = document.getElementById('searchBtn');
+  const closeBtn = document.getElementById('closeSearch');
+  const searchBar = document.getElementById('searchBar');
+  const navLinks = document.getElementById('navLinks');
+
+  searchBtn.addEventListener('click', () => {
+    navLinks.style.display = 'none';
+    searchBar.style.display = 'flex';
+    searchBar.querySelector('input').focus();
+  });
+
+  closeBtn.addEventListener('click', () => {
+    searchBar.style.display = 'none';
+    navLinks.style.display = 'flex';
+  });
+</script>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email :   fanfare.bmc@gmail.com</p>
+    <p>Téléphone : +228 90 99 77 58‬</p>
+    <p>Suivez-nous sur les réseaux sociaux : Facebook | Instagram | YouTube</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fanfare La Belle Mélodie du Christ. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

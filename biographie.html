@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biographie des Planificateur</title>
+     <link rel="icon" type="image/png" href="logo.jpg" />
+
+     <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    nav {
+      background-color: #f5f5dc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: relative;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #05775b;
+      text-decoration: none;
+    }
+
+    nav li {
+      position: relative;
+    }
+
+    nav .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f5f5dc;
+      list-style: none;
+      margin: 0;
+      padding: 0.5rem 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    nav .submenu li {
+      padding: 0.5rem 1rem;
+      white-space: nowrap;
+    }
+
+    nav li:hover .submenu {
+      display: block;
+    }
+
+    .search-btn {
+      background: none;
+      border: none;
+      font-size: 1.3rem;
+      cursor: pointer;
+      margin-left: auto;
+    }
+
+    .search-bar {
+      display: none;
+      background: #f5f5dc;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .search-bar input {
+      width: 50%;
+      padding: 0.75rem;
+      font-size: 1rem;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: #05775b;
+      cursor: pointer;
+    }
+
+    h1 {
+      text-align: center;
+      color: #05775b;
+      margin-top: 2rem;
+    }
+
+    .directeur-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .directeur-text {
+      flex: 1 1 300px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .directeur-image {
+      flex: 1 1 300px;
+      max-width: 400px;
+    }
+
+    .directeur-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #05775b;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+    
+    <div class="search-bar" id="searchBar">
+  <input type="text" placeholder="Rechercher...">
+  <button class="close-btn" id="closeSearch">✖</button>
+</div>
+
+<nav>
+  <ul id="navLinks">
+    <li><a href="accueil.html">Accueil</a></li>
+    <li>
+      <a href="#">Qui sommes-nous ? ▼</a>
+      <ul class="submenu">
+        <li><a href="historique.html">Historique</a></li>
+        <li><a href="Directeur.html">Directeur</a></li>
+        <li><a href="Membre.html">Membres</a></li>
+        <li><a href="comité.html">Comité et Commission musical</a></li>
+        <li><a href="biographie.html">Biographie des planifications</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#">Nos Réalisations ▼</a>
+      <ul class="submenu">
+        <li><a href="nos.html">Nos Solistes</a></li>
+        <li><a href="enre.html">Enregistrement et Résultats</a></li>
+        <li><a href="Vide.html">Vidéo</a></li>
+      </ul>
+    </li>
+    <li><a href="galerie.html">Galerie</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="calendrier.html">Calendrier</a></li>
+     <li><a href="Instruments.html">Nos Instruments</a></li>
+    <li><button class="search-btn" id="searchBtn">🔍</button></li>
+  </ul>
+</nav>
+
+<h1>Biographie des Planificateurs</h1>
+
+<div class="directeur-container">
+  <div class="directeur-text">
+    <h1>KAGA DIMILINE</h1>
+    <p>
+      Né à Lomé (Togo), KAGA DIMILINE est engagé depuis 2014 dans la fanfare La Belle Mélodie du Christ de l’Église Apostles Revelation Society (ARS). Il a débuté en tant que Directeur technique adjoint sur le site dirigé par M. DZOKPE Amenuveve, à la suite d’une formation collective.
+    </p>
+    <p>
+      En 2018, à la suite du départ de M. DZOKPE, il prend la relève en tant que Directeur technique (Leader) de la fanfare. Il assure cette fonction avec rigueur et passion, épaulé par son adjoint, M. ASSOGBA Kossi Dzogbenyuie Bright.
+    </p>
+    <p>
+      En mai 2022, après plusieurs années de leadership, il transmet la direction technique à son adjoint et se voit confier la responsabilité de Directeur de la planification, poste stratégique qu’il occupe avec dévouement jusqu’à ce jour pour l'expansion et le rayonnement de la fanfare La Belle Mélodie du Christ.
+    </p>
+  </div>
+  <div class="directeur-image">
+    <img src="mer.jpg" alt="Photo du Directeur">
+  </div>
+</div>
+
+
+<div class="directeur-container">
+  <div class="directeur-text">
+    <h1>AZIAMADJI Felix Mokpokpo</h1>
+    <p>
+     Né à Lomé (Togo), AZIAMADJI Felix Mokpokpo est un passionné de musique depuis son enfance, où il découvre les percussions traditionnelles et développe un amour profond pour le rythme et les sonorités locales.
+
+    </p>
+    <p>
+      Très tôt, il s'intéresse également aux instruments à vent, assistant régulièrement aux prestations de fanfares pour nourrir sa curiosité et renforcer son désir de faire partie de cet univers. Son véritable parcours musical débute en 2010 avec la guitare solo, au sein du groupe Arbre de Vie Divine.
+
+    </p>
+    <p>
+      Par la suite, il s’initie à la trompette avant de se spécialiser dans le trombone, instrument qu’il adopte pleinement après une formation collective suivie en 2014 au sein de l’Église Apostles Revelation Society (ARS). Il y évolue jusqu’en 2023, année où il quitte le Togo pour l’Allemagne, où il poursuit son aventure musicale en intégrant un groupe de fanfare.
+
+    </p>
+    <p>
+        Aujourd’hui, AZIAMADJI Felix Mokpokpo continue de faire rayonner sa passion et son talent à travers ses performances au sein de la scène musicale allemande.
+    </p>
+  </div>
+  <div class="directeur-image">
+    <img src="felix.jpg" alt="Photo du Directeur">
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Fanfare La Belle Mélodie du Christ. Tous droits réservés.</p>
+</footer>
+
+<script>
+  const searchBtn = document.getElementById('searchBtn');
+  const closeBtn = document.getElementById('closeSearch');
+  const searchBar = document.getElementById('searchBar');
+  const navLinks = document.getElementById('navLinks');
+
+  searchBtn.addEventListener('click', () => {
+    searchBar.style.display = 'block';
+    navLinks.style.display = 'none';
+  });
+
+  closeBtn.addEventListener('click', () => {
+    searchBar.style.display = 'none';
+    navLinks.style.display = 'flex';
+  });
+</script>
+
+</body>
+</body>
+</html>
